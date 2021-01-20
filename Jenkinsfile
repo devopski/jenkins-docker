@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building Docker image..'
+                sh "whoami"
                 sh "docker build -t devopski/jenkins-docker ."
                 
             }
